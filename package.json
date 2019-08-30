@@ -1,0 +1,21 @@
+{
+  "name": "ES6_Project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prebundle": "cp src/index.html dist/index.html",
+    "bundle": "browserify src/game-start.js -t babelify --outfile dist/bundle.js"
+  },
+  "browserify": {
+    "transform": ["babelify"]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-preset-latest": "^6.24.1",
+    "babelify": "^10.0.0",
+    "browserify": "^16.5.0"
+  }
+}
