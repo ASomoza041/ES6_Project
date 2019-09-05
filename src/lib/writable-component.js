@@ -1,7 +1,9 @@
-import { simpleComponent } from "./simple-component";
+import {
+    simpleComponent
+} from "./simple-component";
 
 //Writable class holds an alias property to change the elements' text content.
-export class writingComponent extends simpleComponent {
+export class writableComponent extends simpleComponent {
     constructor(selector) {
         super(selector);
     }
@@ -16,6 +18,3 @@ export class writingComponent extends simpleComponent {
         return (this.element.textContent = x);
     }
 }
-
-
-
