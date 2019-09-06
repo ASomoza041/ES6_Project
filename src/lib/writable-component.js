@@ -14,7 +14,7 @@ export class writableComponent extends simpleComponent {
     }
 
     //sets function as setter. Makes it so you can set it to a value. writableComponent.textContent = "some value"
-    set textContent(x) {
-        return (this.element.textContent = x);
+    set textContent(v) {
+        return (this.element.textContent = v);
     }
 }
