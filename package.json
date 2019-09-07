@@ -8,7 +8,9 @@
     "bundle": "browserify src/game-start.js -t babelify --outfile dist/bundle.js"
   },
   "browserify": {
-    "transform": ["babelify"]
+    "transform": [
+      "babelify"
+    ]
   },
   "keywords": [],
   "author": "",
@@ -17,5 +19,8 @@
     "babel-preset-latest": "^6.24.1",
     "babelify": "^10.0.0",
     "browserify": "^16.5.0"
+  },
+  "dependencies": {
+    "@babel/core": "^7.6.0"
   }
 }

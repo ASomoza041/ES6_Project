@@ -3,7 +3,7 @@ import {
 } from "./map";
 
 export class WinCondition {
-    constructor(field = createSquare(3)) {
+    constructor(field = createSquare(3) ) {
         this.field = field;
     }
     //iterate through the rows and check if the columns holds the same symbol
